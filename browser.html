@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="https://images6.alphacoders.com/107/thumb-1920-1072679.jpg">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1,p,h4{
+        color: red;
+    }
+    #button1{
+        color: green;
+    }
+    body{
+        background-image: url('https://images6.alphacoders.com/107/thumb-1920-1072679.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    #inputText{
+        height:2rem;
+        width:20rem;
+        border-radius: 2rem;
+    }
+    button{
+        color: red;
+        border-radius: 2rem;
+    }
+    button:hover{
+        cursor: pointer;
+        background-color: gray;
+    }
+</style>
+<body>
+    <script>
+        function googleSearch(){
+            google=document.getElementById("inputText").value
+            window.location.href="https://www.google.com/search?q=" + google 
+        }
+        function youTubeSearch(){
+            youtube=document.getElementById("inputText").value
+            window.location.href="https://www.youtube.com/search?q=" + youtube 
+        }
+    </script>
+    <center>
+        <h1>My own browser</h1>
+    </center>
+    <p>Welcome my friends</p>
+    <p>This is one of my webs that you can search everything you want.</p>
+    <h4>Are you ready????</h4>
+    <center>
+        <input type="text" placeholder="search here.." id="inputText">
+        <br>
+        <button id=button1 onclick="googleSearch()">search in google</button>
+        <button onclick="youTubeSearch()">search in YouTube</button>
+        <button><a href="https://www.youtube.com/">youtube home screen</a></button>
+    </center>
+</body>
+</html>
